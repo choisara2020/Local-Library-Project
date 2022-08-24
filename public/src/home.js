@@ -46,7 +46,7 @@ function getMostCommonGenres(books) {
     }
 //   console.log(newObj);
 //   console.log("booklist---->", bookList);
- return bookList.sort((a, b) => (a.count < b.count ? 1 : -1)).slice(0, 5);
+ return bookList.sort((aBook, bBook) => (aBook.count < bBook.count ? 1 : -1)).slice(0, 5);
   //chaining only works if previous method is an array.
   //sort and slice gives NEW arrays
 }
@@ -68,7 +68,7 @@ function getMostPopularBooks(books) {
   return books.map((book) => {
     return {name: book.title, count: book.borrows.length}
   })
-  .sort((a, b) => (a.count < b.count ? 1 : -1))
+  .sort((aBook, bBook) => (aBook.count < bBook.count ? 1 : -1))
   .slice( 0, 5);
 }
 
@@ -96,7 +96,7 @@ function getMostPopularAuthors(books, authors) {
     });
     result.push(oneAuthor);
   });
-  return result.sort((a, b) => b.count - a.count).slice(0, 5);
+  return result.sort((aAuth, bAuth) => bAuth.count - aAuth.count).slice(0, 5);
 }
 
 
