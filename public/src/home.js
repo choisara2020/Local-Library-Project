@@ -1,15 +1,19 @@
-function getTotalBooksCount(books) {
-  return books.length;
-}
+// function getTotalBooksCount(books) {
+//   return books.length;
+// }
 /////////////////////////////////or
-
+//arrow function
+const getTotalBooksCount = books => books.length;
 // function getTotalBooksCount(books) {
 //   return books.reduce(total => total + 1, 0);
 // }
 
-function getTotalAccountsCount(accounts) {
-  return accounts.length;
-}
+// function getTotalAccountsCount(accounts) {
+//   return accounts.length;
+// }
+
+//arrow function
+const getTotalAccountsCount = accounts => accounts.length;
 
 //to the count for books that are borrowed i need filters.
 // booksCheckedOut is my new variable to declare filter function
