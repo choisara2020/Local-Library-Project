@@ -1,12 +1,16 @@
 //findAccountById has two parameters accounts and id
 //loop through account lists and if account.id === id return 
 //use find method to find the matching id.
-function findAccountById(accounts, id) {
-  let findId = accounts.find((account) => account.id === id);
-  return findId;
-}
 
+// function findAccountById(accounts, id) {
+//   let findId = accounts.find((account) => account.id === id);
+//   return findId;
+// }
 
+//arrow function
+const findAccountById = (accounts, id) => {
+  let findId = accounts.find((account) => account.id === id); 
+  return findId};
 
 // long way to write it:
 // function findAccountById(accounts, id) {
@@ -96,4 +100,3 @@ module.exports = {
   getTotalNumberOfBorrows,
   getBooksPossessedByAccount,
 };
-
