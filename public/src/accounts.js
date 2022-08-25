@@ -31,11 +31,21 @@ const findAccountById = (accounts, id) => {
 //use sort() but also need to turn strings to lower case to sort
 //return accounts
 function sortAccountsByLastName(accounts) {
-  accounts.sort((accountA, accountB) => 
-    accountA.name.last.toLowerCase() > accountB.name.last.toLowerCase() ? 1 : -1); 
-  return accounts;
+  const sortedAccounts = accounts.sort((accountA, accountB) => 
+  makeLowerCase(accountA.name.last) > makeLowerCase(accountB.name.last) ? 1 : -1);
+  //accountA.name.last.toLowerCase() > accountB.name.last ? 1 : -1); 
+  return sortedAccounts;
 } 
 
+
+//helper function
+function makeLowerCase(accountName) {
+  return accountName.toLowerCase()
+}
+
+// function makeLowerCase(Accounts) {
+//   accounts.forEach((accountNames) 
+// }
 
 
 //get the total number of books borrowed

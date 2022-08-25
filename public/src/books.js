@@ -7,21 +7,20 @@ const {findAccountById} = require("./accounts");
 //find() loop through authors to find auth new variable
 //author ID ==== mathed id inside author object.
 //return found
-<<<<<<< HEAD
-=======
 
->>>>>>> 7748f60eefe27a14717eb7394b19fa90bd40fee6
+
+
 // function findAuthorById(authors, id) {
 //   let found = authors.find((auth) => auth.id === id);
 //   return found;
 // }
 
-<<<<<<< HEAD
 
 
-=======
+
+
 //arrow function. 
->>>>>>> 7748f60eefe27a14717eb7394b19fa90bd40fee6
+
 const findAuthorById = (authors, id) => {
   let found = authors.find((auth) => auth.id === id); 
   return found
