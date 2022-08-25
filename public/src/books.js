@@ -1,19 +1,23 @@
 const {findAccountById} = require("./accounts");
+
+
+
 //find author by id
 // let found = 
 //find() loop through authors to find auth new variable
 //author ID ==== mathed id inside author object.
 //return found
+
 // function findAuthorById(authors, id) {
 //   let found = authors.find((auth) => auth.id === id);
 //   return found;
 // }
 
-
-
+//arrow function. 
 const findAuthorById = (authors, id) => {
   let found = authors.find((auth) => auth.id === id); 
-  return found};
+  return found
+};
 
 
 //find book by id
