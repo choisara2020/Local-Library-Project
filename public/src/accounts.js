@@ -10,7 +10,8 @@
 //arrow function
 const findAccountById = (accounts, id) => {
   let findId = accounts.find((account) => account.id === id); 
-  return findId};
+  return findId
+};
 
 // long way to write it:
 // function findAccountById(accounts, id) {
